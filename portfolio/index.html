@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio of Esben Jacob Sloth</title>
+  <style type="text/css">
+
+  :root {
+    --color-teal-l: #70d4b6;
+    --color-teal-d: #219fa3;
+    --color-yellow-l: #fcf153;
+    --color-yellow-d: #fbb03b;
+    --color-green-l: #c8f26d;
+    --color-green-d: #97ca36;
+    --color-blue-l: #6a9acf;
+    --color-blue-d: #1d4e87;
+    --color-red-l: #fd6c6e;
+    --color-red-d: #c24f5a;
+  }
+  @font-face {
+    font-family: 'uni0553';
+    src: url(assets/uni0553-webfont.woff);
+  }
+
+  @keyframes upDown {
+    50% {
+      transform: translatey(2.5vw);
+    }
+    0%, 100% {
+      transform: translatey(-2.5vw) rotate(10deg);
+    }
+  }
+  @keyframes rightLeft {
+    40% {
+      transform: translatez(00px) ;
+    }
+    0%, 100% {
+      transform: translatez(-30px) rotate(-7deg);
+    }
+  }
+  @keyframes animatedBackground {
+    from { background-position: 1400vw 0, 4620vw 50vw; }
+    to { background-position:   0 0, 0 50vw; }
+  }
+
+  html {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    background-color: #000;
+    color: #fff;
+    font-size: 1em;
+    perspective: 100px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'uni0553';
+    padding: 0;
+    margin: 0;
+  }
+
+  .head {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/images/stars.gif), url(assets/images/stars.gif);
+    background-size: 1400vw 184vw, 4620vw 105vw;
+    image-rendering: pixelated;
+    animation: animatedBackground 8s infinite linear;
+    overflow: hidden;
+  }
+  p {
+    padding: 1em;
+    margin: 0em;
+  }  
+  a {
+    color: var(--color-yellow-l);
+  }
+  a:visited {
+    color: var(--color-yellow-d);
+  }
+
+  img.name, img.portfolio {
+    image-rendering: pixelated;
+    width: 80%;
+    height: auto;
+    padding: 3vw;
+  }
+  @media screen and (min-aspect-ratio: 8/5) {   img.name, img.portfolio {
+    height: 20vh;
+    width: auto;
+    } }
+
+    img.name {
+      animation: rightLeft 2s cubic-bezier(0.7, 0, 0.4, 1.0) infinite;
+    }
+
+    img.portfolio {
+      animation: rightLeft 2s .25s cubic-bezier(0.7, 0, 0.4, 1.0) infinite;
+    }
+
+    img.phone {
+      image-rendering: pixelated;
+      width: 5vw;
+      height: auto;
+      vertical-align: middle;
+      animation: upDown 1s .63s cubic-bezier(0.7, 0.2, 0.3, 1.0) infinite;
+    }
+
+    img.tablet {
+      image-rendering: pixelated;
+      width: 9vw;
+      height: auto;
+      vertical-align: middle;
+      animation: upDown 1s .15s cubic-bezier(0.7, 0.2, 0.3, 1.0) infinite;
+    }
+
+    .subtitle {
+      animation: rightLeft 2s .5s cubic-bezier(0.7, 0, 0.4, 1.0) infinite;
+    }
+    .subtitle h2 {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 3vw;
+      padding: 1vw;
+    }
+    .title-bar{
+      width: 100%;
+      font-size: 1.5em;
+      padding: 1vw 4vw 2vw 4vw;
+    }
+
+
+    .full-page {
+
+      position: relative;
+      overflow: hidden;
+      height: 125% ;
+      text-align: bottom left;
+      text-shadow: 0.12em 0.12em #000;
+    }
+    .full-page > p {
+      background-color: rgba(0,0,0,0.25);
+      margin: 1em;
+      float: left;
+
+    }
+
+
+    #pogs-battle > .bg{
+      z-index: -10;
+      width: 120%;
+      height: 100%;
+      position: absolute;
+
+      background-color: #FF0;
+      background-image: url(artwork/pogs-battle/background.jpg);
+      background-size: cover;
+      background-position: left bottom;
+      transform: translate3d(-10vw, 0, -200px)  scale(3.1);
+    }
+
+    #green-arm{
+      z-index: -5;
+      width: auto;
+      height: 120vmin;
+      position: absolute;
+      left: 0vw;
+      top: 0vw;
+      transform-origin: top;
+      transform: translate3d(-30vmin, -100vmin, -150px) scale(1.5);
+    }
+
+    #purple-arm{
+      z-index: -5;
+      width: auto;
+      height: 120vmin;
+      position: absolute;
+      right: 0vw;
+      bottom: 0vw;
+      transform: translate3d(12vmin, 40vmin, -25px) scale(1);
+    }
+
+    #farm-cubes > .bg{
+      z-index: -10;
+      width: 100%;
+      height: 130%;
+      background-color: #987;
+      position: absolute;
+      background-image: url(artwork/farm-cubes/farmcubes-background.jpg);
+      background-size: cover;
+      background-position: center bottom;
+      transform: translate3d(0, -100vh, -200px) scale(3.1);
+    }
+
+    #chicken{
+      z-index: -5;
+      width: 40vmin;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate3d(-20vmin, -40vmin, -50px) scale(1.3);
+    }
+    #cow{
+      z-index: -6;
+      width: 40vmin;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate3d(-70vmin, 40vmin, -160px) scale(1.5);
+    }
+    #pig{
+      z-index: -7;
+      width: 40vmin;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate3d(20vmin, 15vmin, -100px) scale(1.5);
+    }
+
+    #backwater-gospel > .bg{
+      z-index: -10;
+      width: 100%;
+      height: 140%;
+      background-color: #987;
+      position: absolute;
+      background-image: url(artwork/backwater-gospel/backwater-bg.jpg);
+      background-size: cover;
+      background-position: center center;
+      transform: translate3d(0, 30vh, -200px) scale(3.05);
+    }
+
+    #backwater-logo{
+      z-index: -5;
+      width: 90vw;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate3d(-45vw, -20vh, -100px) scale(1.8);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="head">
+    <img src="assets/images/name.png" class="name" alt="name" ><br/>
+    <img src="assets/images/portfolio.gif" class="portfolio" alt="portfolio">
+    <div class="subtitle">
+      <img src="assets/images/phone.png" class="phone" alt="phone"/>
+      <h2> Video game art director</h2>
+      <img src="assets/images/tablet.png" class="tablet" alt="tablet"/>
+    </div>
+    <p>MMXVII<br/>Scroll down</p>
+  </div>
+
+
+
+  <div class="title-bar">
+    POGs Battle
+  </div>
+  <div class="full-page" id="pogs-battle">
+    <div class="bg">
+    </div>
+    
+    <p>2017 Art Direction<br/>iOS and Android Game<br/></p>
+    <img id="green-arm" src="artwork/pogs-battle/green-arm.png">
+    <img id="purple-arm" src="artwork/pogs-battle/purple-arm.png">
+  </div>
+
+  <div class="title-bar">
+    Farm Cubes
+  </div>
+  <div class="full-page" id="farm-cubes">
+    <div class="bg">
+    </div>
+    
+    <p>2015 Art Direction<br/>iOS and Android Game<br/></p>
+    <img id="chicken" src="artwork/farm-cubes/farmcubes-chicken.png">
+    <img id="cow" src="artwork/farm-cubes/farmcubes-cow.png">
+    <img id="pig" src="artwork/farm-cubes/farmcubes-pig.png">
+  </div>
+
+  <div class="title-bar">
+    The Backwater Gospel
+  </div>
+  <div class="full-page" id="backwater-gospel">
+    <div class="bg">
+    </div>
+    
+    <p>2009 Art Direction<br/>Animated shortfilm</p>
+    <img id="backwater-logo" src="artwork/backwater-gospel/backwater-logo.png">
+  </div>
+
+  <div class="full-page" id="about">
+    <div class="title-bar">About</div>
+    <p>Hey, my name is Esben, I make video games.</p>
+    <p>Born 1987 in Hjørring, Vendsyssel.</p>
+    <p>Art director at <a href="http://www.playlab.com/">Playlab</a></p>
+  </div>
+
+</body>
+</html>
