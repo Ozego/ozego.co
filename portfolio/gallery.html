@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photoswipe Gallery</title>
+	
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="assets/photoswipe.css">
+	<link rel="stylesheet" href="assets/default-skin/default-skin.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<style type="text/css">
+
+	body{
+		background: #222;
+	}
+	.wraperdaper{
+		max-width: 170vh;
+		margin: 0 auto ;
+		text-align: right;
+		background: #000;
+	}
+
+	.slidepanels {
+		/* Prevent vertical gaps */
+		text-align: right;
+		line-height: 0;
+		margin: 0 0 5vh 0;
+
+		column-count:         3;
+		column-gap:           0;
+		vertical-align: middle;
+
+	}
+
+
+	.slidepanels .picture figure a img {
+		/* Just in case there are inline attributes */
+		width: 100% !important;
+		height: auto !important;
+		margin-bottom: 0;
+		float: left;
+
+
+	}
+
+	figure, .picture {
+		margin:0;
+		display: block;
+
+	}
+
+	@media (max-aspect-ratio: 4/3) {
+		.slidepanels {
+			column-count:         2;
+		}
+	}
+	@media (max-aspect-ratio: 3/4) {
+		.slidepanels {
+			column-count:         1;
+		}
+	}
+</style>
+
+
+</head>
+</head>
+<body>
+
+	<div class="wraperdaper">
+		<div class="slidepanels">
+			<div class="picture" itemscope itemtype="http://schema.org/ImageGallery">
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork//background-painting/duck-environment-concept-01.jpg" itemprop="contentUrl" data-size="1280x800">
+						<img src="thumbnails/background-painting/duck-environment-concept-01.jpg" itemprop="thumbnail" alt="environment concept">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/background-painting/duck-environment-concept-09.jpg" itemprop="contentUrl" data-size="1280x598">
+						<img src="thumbnails/background-painting/duck-environment-concept-09.jpg" itemprop="thumbnail" alt="environment concept">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/background-painting/duck-environment-concept-10.jpg" itemprop="contentUrl" data-size="1280x742">
+						<img src="thumbnails/background-painting/duck-environment-concept-10.jpg" itemprop="thumbnail" alt="environment concept">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/background-painting/ConceptAnime.jpg" itemprop="contentUrl" data-size="2048x1152">
+						<img src="thumbnails/background-painting/ConceptAnime.jpg" itemprop="thumbnail" alt="speedpainting">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/background-painting/flyfishclouds.jpg" itemprop="contentUrl" data-size="1280x720">
+						<img src="thumbnails/background-painting/flyfishclouds.jpg" itemprop="thumbnail" alt="cloud concept">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/background-painting/speedpainting.jpg" itemprop="contentUrl" data-size="1280x692">
+						<img src="thumbnails/background-painting/speedpainting.jpg" itemprop="thumbnail" alt="speedpainting">
+					</a>
+				</figure>
+			</div>
+		</div>
+
+		<div class="slidepanels">
+
+			<div class="picture" itemscope itemtype="http://schema.org/ImageGallery">
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/backwater-gospel/backwater_poster.jpg" itemprop="contentUrl" data-size="1131x1600">
+						<img src="thumbnails/backwater-gospel/backwater_poster.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/backwater-gospel/backwater-background-1.jpg" itemprop="contentUrl" data-size="1280x692">
+						<img src="thumbnails/backwater-gospel/backwater-background-1.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/backwater-gospel/backwater-background-2.jpg" itemprop="contentUrl" data-size="1280x692">
+						<img src="thumbnails/backwater-gospel/backwater-background-2.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/backwater-gospel/backwater-background-3.jpg" itemprop="contentUrl" data-size="1280x692">
+						<img src="thumbnails/backwater-gospel/backwater-background-3.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/backwater-gospel/backwater-bg.jpg" itemprop="contentUrl" data-size="1131x1600">
+						<img src="thumbnails/backwater-gospel/backwater-bg.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+			</div>
+		</div>
+
+		<div class="slidepanels">
+
+			<div class="picture" itemscope itemtype="http://schema.org/ImageGallery">
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/fenpel/fenpel-watercolor-1.jpg" itemprop="contentUrl" data-size="900x640">
+						<img src="thumbnails/fenpel/fenpel-watercolor-1.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/fenpel/fenpel-watercolor-2.jpg" itemprop="contentUrl" data-size="900x640">
+						<img src="thumbnails/fenpel/fenpel-watercolor-2.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/fenpel/fenpel-watercolor-3.jpg" itemprop="contentUrl" data-size="900x640">
+						<img src="thumbnails/fenpel/fenpel-watercolor-3.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/fenpel/fenpel-watercolor-4.jpg" itemprop="contentUrl" data-size="900x640">
+						<img src="thumbnails/fenpel/fenpel-watercolor-4.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/fenpel/fenpel-watercolor-5.jpg" itemprop="contentUrl" data-size="900x640">
+						<img src="thumbnails/fenpel/fenpel-watercolor-5.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/fenpel/fenpel-watercolor-6.jpg" itemprop="contentUrl" data-size="900x640">
+						<img src="thumbnails/fenpel/fenpel-watercolor-6.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+
+				</figure>
+			</div>
+		</div>
+		<div class="slidepanels">
+
+			<div class="picture" itemscope itemtype="http://schema.org/ImageGallery">
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/pogs-battle/super-slam-pogs-battle_sc_11.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/pogs-battle/super-slam-pogs-battle_sc_12.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/pogs-battle/super-slam-pogs-battle_sc_15.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/pogs-battle/pogdbattle-grafitti.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/pogs-battle/super-slam-pogs-battle_sc_14.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/pogs-battle/pogdbattle-street-2.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+
+
+			</div>
+		</div>
+		<div class="slidepanels">
+
+			<div class="picture" itemscope itemtype="http://schema.org/ImageGallery">
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/various/bookmarker_by_gooze-d5rl8y8.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/portraits/aum_by_gooze-d5ukoss.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/portraits/intet__by_gooze-d5ux7ru.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/portraits/snake_charm_by_gooze-d5xzxhy.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/portraits/vieled_by_gooze-d5yejjj.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+
+			</div>
+		</div>
+		<div class="slidepanels">
+
+			<div class="picture" itemscope itemtype="http://schema.org/ImageGallery">
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/various/werewolf_by_gooze-d5rl842.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/various/diver_by_gooze-d5rl7ej.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/various/fnord12.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/various/moon_by_gooze-d5rl7zo.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="artwork/" itemprop="contentUrl" data-size="$001">
+						<img src="thumbnails/various/nine_poster.jpg" itemprop="thumbnail" alt="$003">
+					</a>
+
+				</figure>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="pswp__bg"></div>
+		<div class="pswp__scroll-wrap">
+
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+
+			<div class="pswp__ui pswp__ui--hidden">
+				<div class="pswp__top-bar">
+					<div class="pswp__counter"></div>
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+					<button class="pswp__button pswp__button--share" title="Share"></button>
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div> 
+				</div>
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+				</button>
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+				</button>
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="assets/photoswipe.min.js"></script>
+	<script src="assets/photoswipe-ui-default.min.js"></script>
+	<script src="assets/gallery-script.js"></script>
+</body>
+</html>
