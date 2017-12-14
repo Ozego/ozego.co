@@ -22,6 +22,7 @@
                 });
                 return items;
             }
+            
 
         var items = getItems();
 
@@ -39,6 +40,7 @@
                 bgOpacity: 0.7,
                 spacing: 0.2,
                 showHideOpacity: true
+
             }
 
             var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
